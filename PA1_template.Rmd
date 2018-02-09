@@ -1,6 +1,8 @@
 ---
-title: "PA1_template.Rmd"
-author: "Johannes de Clippele"
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+html_document:
+keep_md: true
 ---
 
 ```{r setup, include=FALSE}
