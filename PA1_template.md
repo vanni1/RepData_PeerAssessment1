@@ -1,10 +1,10 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: "Untitled"
+author: "Johannes de Clippele"
+date: "10 februari 2018"
 output: 
   html_document: 
     keep_md: yes
-keep_md: true
-self_contained: true
 ---
 
 
@@ -120,7 +120,7 @@ DailyActivity_Avg4NA <- aggregate(. ~ date, data = Activity_Avg4NA,FUN=sum,na.rm
 hist(DailyActivity_Avg4NA$steps ,main = "histogram of the total number of steps taken each day", xlab = "steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/NA_Strategy-1.png)<!-- -->
 
 ```r
 mean(DailyActivity_Avg4NA$steps)
@@ -169,6 +169,6 @@ xyplot(steps~interval.Hour|WeekendFlag,
     layout=c(1,2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/weekend-1.png)<!-- -->
 
   

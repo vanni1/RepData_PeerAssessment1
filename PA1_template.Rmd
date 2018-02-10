@@ -1,8 +1,10 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: "Untitled"
+author: "Johannes de Clippele"
+date: "10 februari 2018"
 output: 
-html_document:
-keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -66,13 +68,13 @@ axis(1, at = seq(0, 24, by = 4))
 
 ## Imputing missing values  
 
-```{r}
+```{r NA}
 sum(is.na(Activity$steps))
 ```
   
    **The total number (rows) of missing values in the dataset is `r sum(is.na(Activity$steps))` or `r round(100*sum(is.na(Activity$steps))/nrow(Activity),0)` %.**  
    
-```{r}
+```{r NA_Strategy}
 ## Calculate the mean number of steps per interval in order to attribute that value to the NA's in the dataset
 
 IntervalAvgActivity <- aggregate(. ~ interval, data = Activity,FUN=mean,na.rm = TRUE)
@@ -105,7 +107,7 @@ Imputing the missing data on the estimates of the total daily number of steps cl
 ##  Are there differences in activity patterns between weekdays and weekends?
   
 
-```{r}
+```{r weekend}
 
 ## please use your words for saturday and sunday if you would be running the line of code below
 
